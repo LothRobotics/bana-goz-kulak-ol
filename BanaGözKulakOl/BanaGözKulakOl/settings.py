@@ -126,5 +126,10 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = '/'
 LOGOUT_REDIRECT_URL = "/logoutsuccess"
 
-EMAIL_BACKEND = "django.core.mail.backends.filebased.EmailBackend"
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_FILE_PATH = BASE_DIR / "sent_emails"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_HOST_USER= "banagozkulakol22@gmail.com"
+EMAIL_HOST_PASSWORD= "Ssal1234?"
+EMAIL_PORT=587
+EMALE_USE_TLS=True
