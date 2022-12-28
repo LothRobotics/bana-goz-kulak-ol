@@ -1,7 +1,5 @@
 from django.shortcuts import render
 
-# Create your views here.
-
 def IndexView(request):
     return render(request, 'main.html')
 
@@ -10,3 +8,6 @@ def LogOutView(request):
 
 def AboutUsView(request):
     return render(request, 'about.html')
+
+def ProfileView(request):
+    return render(request, 'profile.html')
