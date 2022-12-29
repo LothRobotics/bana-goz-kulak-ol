@@ -14,7 +14,7 @@
 
     <h2>Kör müsün?</h2> <br>
     {% if request.user.is_authenticated %} 
-    hoşgeldiniz sayın {{ user.username }}. <a href="profile/">Hesabıma git</a> <br>
+    hoşgeldiniz sayın {{ user.username }}. <a href="#">Hesabıma git</a> <br>
     <p><a href="{% url 'logout' %}">Çıkış Yap</a></p>
     {% else %}
     Hmm... Bir hesaba giriş yapmamışsınız. Bir hesabınız yoksa <a href="accounts/signup">kayıt olun</a>
