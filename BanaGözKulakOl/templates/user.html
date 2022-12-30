@@ -1,4 +1,4 @@
-{% include 'base.html' %}
+{% include 'base_header.html' %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +13,9 @@
     <p>Soyad: {{user.last_name}}</p>
     <p>Kullanıcı Adı: {{user.username}}</p>
     <p>E-Posta: {{user.email}}</p>
-    <a href="/profile/customize">Profilimi Düzenle</a>
+    <a href="#">Profilimi Düzenle</a>
 
 </body>
 </html>
+
+{% include 'base_footer.html' %}
