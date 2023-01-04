@@ -1,0 +1,21 @@
+{% include 'base_header.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilim | Bana Göz Kulak Ol</title>
+</head>
+<body>
+
+    <p>Ad: {{user.first_name}}</p>
+    <p>Soyad: {{user.last_name}}</p>
+    <p>Kullanıcı Adı: {{user.username}}</p>
+    <p>E-Posta: {{user.email}}</p>
+    <a href="/profile/customize">Profilimi Düzenle</a>
+
+</body>
+</html>
+
+{% include 'base_footer.html' %}
